@@ -1,0 +1,107 @@
+/******************************************************************
+NAV
+******************************************************************/
+.menu-wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width:210px;
+  height: 100%;
+  background: rgba(black,0.8);
+
+
+  .menu-header{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: transparent;
+
+  }
+  .menu-header{
+    display: none;
+  }
+  .menu-list-close{
+    display: block;
+  }
+  .menu-list{
+    position: absolute;
+    //width: 768px;
+    height: 44px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding:0 22px;
+    background: transparent;
+    text-align: right;
+    &:after {
+      content: '';
+      width: 100%;
+      display: inline-block;
+      font-size: 0;
+      line-height: 0
+    }
+    li{
+      vertical-align: top;
+      display: block;
+
+      padding:0;
+      background: transparent;
+      .am-item{
+        font-size: 0.9em;
+        font-weight: normal;
+        display: inline;
+        height: 44px;
+        line-height: 44px;
+        text-decoration: none;
+        color: white;
+        border-bottom: none;
+      }
+      &:last-child{
+        &:after{
+          display: none;
+        }
+      }
+      .am-accueil{
+        display: inline-block;
+        background-image: url("../img/menu/icon-logo-menu-v2.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 37px;
+        width: 44px;
+        margin-top: 4px;
+        overflow: hidden;
+        span{
+          display: none;
+        }
+      }
+      .am-contact{
+        display: inline-block;
+        background-image: url("../img/menu/icon-contact-menu-v2.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 37px;
+        width: 44px;
+        margin-top: 4px;
+        overflow: hidden;
+        span{
+          display: none;
+        }
+      }
+    }
+
+  }
+}
+/******************************************************************
+.container
+******************************************************************/
+.container{
+
+}
+/******************************************************************
+PAGE ACCUEIL
+******************************************************************/
+.wrapper-main{
+  margin: -10px 0 0 210px;
+}
